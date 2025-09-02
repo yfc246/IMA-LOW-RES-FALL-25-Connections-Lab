@@ -1,0 +1,63 @@
+body {
+    font-size: 15px;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #c4cbff;
+    text-align: center;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    font-size: 10em;
+}
+
+
+a {
+    text-decoration: none;
+    background-color: #b8ff1d;
+    font-size: 2em;
+
+}
+
+
+#plush1{
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    padding: 30px;
+    width: 30%;
+    position: absolute;
+    top: 600px;
+    left: 100px;
+}
+
+#plush2{
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    padding: 30px;
+    width: 33%;
+    position: absolute;
+    top: 1000px;
+    left: 500px;
+}
+
+#plush3{
+    display: flex;
+    align-items: right; 
+    gap: 15px; 
+    padding: 30px;
+    width: 28%;
+    position: absolute;
+    top: 1200px;
+    left: 1300px;
+}
+
+
+#bgimage {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    padding: 30px;
+    width: 100%;
+}
