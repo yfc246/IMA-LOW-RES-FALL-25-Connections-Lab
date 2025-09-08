@@ -62,6 +62,8 @@ a {
 
 .button:hover {
     background-color: #BBBDF6; 
+    color: #fffff8;
+
 }
 
 
@@ -97,7 +99,7 @@ text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: #ddd;
+  color: #F75C03;
 }
 
 
