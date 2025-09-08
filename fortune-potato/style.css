@@ -1,0 +1,155 @@
+body {
+    font-size: 15px;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    background-color: #fffff8;
+}
+
+
+
+.title {
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 20px;
+    color: #F75C03;
+    text-align: left;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    font-size: 10em;
+}
+
+
+/* logo */
+h2 {
+    text-align: left;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    font-size: 3em;
+}
+
+
+/* description */
+p {
+    font-size: 2em;
+    text-align: left;
+    width: 49%;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.logo {
+    color: #564138;
+    text-align: left;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.button {
+    background-color: #F75C03;
+    color: #564138; 
+    padding: 10px 20px; /* Add some space inside the button */
+    border: none; /* Remove the default border */
+    cursor: pointer; /* Change mouse cursor on hover */
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #BBBDF6; 
+}
+
+
+.button_2 {
+width: 15%;
+margin-left: 20px;
+text-align: center;
+text-decoration: none;
+}
+
+.navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; /* Vertically centers items on the same level */
+  padding: 10px 20px; /* Adds some spacing */
+  margin-top: 20px;
+}
+
+.nav-links {
+  list-style: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Makes list items (li) sit side-by-side */
+  gap: 20px; /* Adds space between each link */
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #564138;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+    margin-bottom: 0px;
+    position: relative; /*make the potato float*/
+}
+
+
+/* make both columns take up equal space */
+.text,
+.image {
+    flex: 1;
+}
+
+.image img{
+max-width: 100%;
+min-width: 450px;
+}
+
+.dish {
+    color: #F75C03;
+}
+
+.potato {
+    scale: 30%;
+    margin-top: 0px;
+    margin-left: 0px;
+    align-items: left;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: absolute; /*make the potato float*/
+    z-index: 10; /*make sure the image float above everything*/
+}
+
+@keyframes move {
+    0% {
+    transform: translateX(0vw) rotate(45deg);
+    animation: fade-in 0.5s ease-in;
+    }
+
+    100% {
+    transform: translateX(500px) rotate(90deg);
+    animation: fade-in 0.5s ease-in;
+    }
+
+}
