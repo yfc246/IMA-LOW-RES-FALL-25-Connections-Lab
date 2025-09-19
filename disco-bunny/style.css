@@ -1,0 +1,74 @@
+body {
+    font-size: 32px;
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: #000000;
+}
+
+#main-content{ 
+    position: absolute; /* this changes the position of the entire section, moved it off centered, not sure how to fix this */
+    transition: opacity 0.5s ease-in-out; /* Smooth fade effect (gemini) */
+}
+
+.title {
+    min-height: 100vh;/* Make the body at least the full height of the viewport(gemini) */
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    position: relative; 
+}
+
+p {
+    font-size: 25px;
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    position: relative; 
+    top: -280px;
+}
+
+.arrow{
+    scale: 10%;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center; /*not sure why it's not centered */
+    align-items: center;
+    position: absolute;
+    top: 50px; /* sure there is a better way to do this */
+    left: 100px;
+    z-index: 1000;
+
+    /* animation (gemini)*/
+    animation: pulse-up 2s infinite;
+
+}
+
+/* Define the animation sequence (gemini)*/
+@keyframes pulse-up {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 20px); /* Start lower and invisible */
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, 0); /* Fade in and move to original position */
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -20px); /* Continue moving up and fade out */
+  }
+}
+
+/* Visibility classes (gemini) */
+.active {
+    opacity: 1;
+    pointer-events: auto; /* Allows interaction */
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none; /* Prevents interaction when hidden */
+}
