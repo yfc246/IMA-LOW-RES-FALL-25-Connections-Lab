@@ -27,7 +27,7 @@ p {
     align-items: center;
     color: azure;
     position: relative; 
-    top: -280px;
+    top: -300px;
 }
 
 .arrow{
@@ -37,7 +37,7 @@ p {
     justify-content: center; /*not sure why it's not centered */
     align-items: center;
     position: absolute;
-    top: 50px; /* sure there is a better way to do this */
+    top: -150px; /* sure there is a better way to do this */
     left: 100px;
     z-index: 1000;
 
