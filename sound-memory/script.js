@@ -52,3 +52,7 @@ function draw() {
     // image(pixelRegion, width * 0.7, height * 0.65, 50, 300) 
 
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
