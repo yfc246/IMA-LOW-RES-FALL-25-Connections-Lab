@@ -1,0 +1,51 @@
+body {
+    font-family: "Alan Sans", sans-serif;
+    font-size: 16px;
+}
+
+.main-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1000; /* why adding this isn't making the content show above the image?*/
+}
+
+.title {
+    font-size: 3em; /* if larger than 3em it shifts the alignment!!!*/
+    font-weight: 900;
+
+}
+
+.info {
+    width: 450px; /*i want to make the title and info different width so that title can span across the entire screen while info remain inside a smaller box*/
+
+}
+
+
+/*style for the button*/
+label {
+    display: block;
+    width: 200px;
+    background: #e4ff00;
+    color: #222222;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*hide the default input style*/
+input {
+    display: none;
+}
+
+/* .image {
+    z-index: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+} */
+
