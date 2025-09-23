@@ -40,6 +40,8 @@ function draw() {
     image(pixelRegion, width * 0.25, height * 0.2, 200, 350) 
     image(pixelRegion, width * 0.4, height * 0.5, 300, 300) 
     image(pixelRegion, width * 0.5, height * 0.4, 500, 200) 
+    image(pixelRegion, random(width * 0.85, height * 0.15), random(width * 0.85, height * 0.15), random(10, 100), random(100, 10))
+
     image(pixelRegion, mouseX, mouseY, 150, 150)
 
 
