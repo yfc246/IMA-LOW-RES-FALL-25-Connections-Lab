@@ -2,9 +2,8 @@ body {
     font-family: "Alan Sans", sans-serif;
     font-size: 16px;
     background-image: url("./media/bgimg-1.png");
+    background-size: cover;
     color: azure;
-
-
 }
 
 .main-content {
@@ -20,12 +19,10 @@ body {
 .title {
     font-size: 3em; /* if larger than 3em it shifts the alignment!!!*/
     font-weight: 900;
-
 }
 
 .info {
     width: 450px; /*i want to make the title and info different width so that title can span across the entire screen while info remain inside a smaller box*/
-
 }
 
 
