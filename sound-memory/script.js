@@ -44,6 +44,8 @@ function draw() {
 
     image(pixelRegion, mouseX, mouseY, 150, 150)
 
+    //resize image to fit width proportionally
+    pic.resize(width, 0);
 
 
 
