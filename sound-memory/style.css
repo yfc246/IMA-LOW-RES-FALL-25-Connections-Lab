@@ -1,6 +1,8 @@
 body {
     font-family: "Alan Sans", sans-serif;
     font-size: 16px;
+    background-image: url("./media/bgimg-1.png");
+
 }
 
 .main-content {
